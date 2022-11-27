@@ -1,0 +1,13 @@
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid new">
+          <a class="navbar-brand" href=" "><p>Virtual Library</p></a>
+        </div>
+      </nav>
+ 
+        <ul>
+          <li *ngFor="let book of data_FE">
+           <a href={{book.link}}> <holder [book]="book.name" [val]="book.author"> </holder> </a>
+          </li>
+        </ul> 
+    </body>
